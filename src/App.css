@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/**navbar**/
+.nav{
+  padding: 12px;
+}
+.bi{
+  cursor: pointer;
+}
+.bi-plus-circle {
+  font-size: 20px;
+  color: white;
+  
+}
+
+/***Add student form and edit student form***/
+.form-control, .form-select {
+  height: 36px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  border-radius: 2px;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+ .form-control ,.form-select {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+
+.form-control:focus,.form-control:active {
+  border-color: #0d6efd!important;
+}
+
+
+
+/*****edit student*****/
+.icon-home {
+  color: #0d6efd !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .w-50 {
+    width: 100%!important;
+}
+}
+
+
+
+
