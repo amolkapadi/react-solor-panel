@@ -1,0 +1,25 @@
+.card{
+    border: none;
+    cursor: pointer;
+}
+.card-body{
+    border-radius: 8px;
+background-color: white;
+padding: 1rem;
+position: relative;
+bottom: 50px;
+box-sizing: border-box;
+margin-left: 1rem;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+margin-right: 1rem;
+}
+.card-img-top{
+    transition: transform .5s ease;
+    
+}
+.card-img-top:hover{
+    transform: scale(0.9);
+}
+.card-title:hover{
+    color: cadetblue;
+}

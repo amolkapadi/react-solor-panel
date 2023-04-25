@@ -1,0 +1,11 @@
+.footer-section{
+    background-color: black;
+    color: white;
+}
+.bi{
+    font-size: 30px;
+}
+.footer-icon .bi:hover{
+    color: tomato;
+    cursor: pointer;
+}
