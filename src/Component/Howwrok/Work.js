@@ -4,7 +4,7 @@ import img from '../../img/howwork.png'
 export default function Work() {
   return (
     <div className='container py-5'>
-        <h3>How Bidprotrade Works</h3><hr />
+        <h3 className='text-center'>How Bidprotrade Works</h3><hr />
         <div className='row'>
             <img src={img} className='img-fluid' />
         </div>

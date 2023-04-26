@@ -3,3 +3,95 @@
     margin-top: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+ul, li {
+    margin:0;
+    padding: 0;
+    
+  }
+  span::first-letter{
+      text-transform: capitalize;
+  }
+  
+  body {
+    font-family: 'Roboto Condensed', serif;
+  }
+  
+  /* START TIMELINE 
+   the width of the list parent is optional 
+  if you set this width 
+  A hover sample effect is added as well as an active state*/
+  
+  .base-timeline {
+      list-style-type: none;
+      counter-reset: number; /* number 2021*/
+      position: relative;
+      display: block;
+      z-index: 2;
+      width: 100%; /* change or remove*/
+    
+  }
+  
+  .base-timeline::before {
+        content: '';
+        width:92%;
+        border-top: 2px solid rgb(180, 182, 183);
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        z-index: -1;
+  
+  }
+  
+  /* set width of time-line this can be px, percentage or other unit
+  3 is the number of list items minus 1 when using percentage
+  */
+  .base-timeline__item {
+        position: relative;
+        display: inline-block;
+        width: calc(100% / 3 - 202px);
+  }
+  
+  .base-timeline__item::before {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          counter-increment: number; /* number -1*/
+          content: counter(number) ''; 
+          width: 40px;
+          height: 40px;
+          background-color: rgb(180, 182, 183);
+          color: white;
+          font-weight: bold;
+          transition: all 0.6s ease-in-out;
+          box-sizing: border-box;
+          
+  }
+  
+  /* modifier with use of the data-year attribute */
+  .base-timeline__item--data::before {
+    content: attr(data-year);
+    width: 60px;
+    height: 60px;
+  }
+  
+ 
+
+  
+  .base-timeline__item:last-child {
+        width: 0;
+  }
+  
+  /* summary text is optional and can be anything */
+  
+  .base-timeline__summary-text {
+        position: absolute;
+        
+        
+      }
+  
+  
+  
+  .timeline{
+    margin-left: 185px !important;
+  }

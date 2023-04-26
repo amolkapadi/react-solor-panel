@@ -2,7 +2,8 @@ import React from 'react'
 import './Profile.css'
 export default function Profile() {
   return (
-    <div className='container py-5 mt-5'>
+      <>
+             <div className='container py-5 mt-5'>
     <div className='row py-5'>
       <h3>My Profile</h3> <hr />
       <div className="accordion accordion-flush" id="accordionFlushExample">
@@ -40,5 +41,35 @@ export default function Profile() {
     </div>
 
   </div>
+  <br /><br />
+
+    <div className='container-fluid py-5 '>
+      
+    <div className='py-5 timeline'>
+    <ul class="base-timeline">
+  <li class="base-timeline__item">
+    <span class="base-timeline__summary-text">order placed</span>
+  </li>
+  <li class="base-timeline__item">
+    <span class="base-timeline__summary-text">Request send to manufacture</span>
+  </li>
+  <li class="base-timeline__item">
+    <span class="base-timeline__summary-text">In-transit</span>
+  </li>
+  <li class="base-timeline__item">
+    <span class="base-timeline__summary-text">Deliverd</span>
+  </li>
+  <li class="base-timeline__item">
+    <span class="base-timeline__summary-text">Installation in process</span>
+  </li>
+  <li class="base-timeline__item">
+    <span class="base-timeline__summary-text">Installation Done</span>
+  </li>
+</ul>
+    </div>
+    </div>
+
+
+      </>
   )
 }

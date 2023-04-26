@@ -3,9 +3,9 @@ import './Solorpanel.css'
 import SolorPanelCard from '../SolorpanelCard/SolorPanelCard'
 export default function SolorPanel() {
     return (
-        <div className='container'>
-            <div className='py-5'>
-                <h3>Solor Panel</h3>
+        <div className='container mt-5' id='solar-panel'>
+            <div className='py-5 mt-5'>
+                <h3 className='text-center'>Solar Panel</h3>
                 <hr />
                 <div className='d-flex py-5'>
                 <ul className="nav nav-tabs" id="myTab" role="tablist">

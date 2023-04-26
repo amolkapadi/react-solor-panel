@@ -6,6 +6,11 @@
 .card1-body{
     padding: 10px;
 }
+.form-control, .form-select {
+    border: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+    padding: 9px !important;
+}
 
 @media only screen and (max-width: 600px) {
     .ps-5 {
