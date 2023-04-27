@@ -85,6 +85,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./Blog.css"
 export default function Blog() {
   const img = "https://www.networkforphl.org/wp-content/uploads/2020/01/iStock-1032683612-1392x0-c-default-q40.jpg"
   const settings = {
@@ -94,20 +95,46 @@ export default function Blog() {
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
-      autoplaySpeed: 2000,
-      rtl: true
+      autoplaySpeed: 4000,
+      rtl: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
   };
   return (
     <div className='container'>
       <h3 className='text-center'>Blogs & Articles</h3>
       <p className='text-center'>Apart from the obvious financial benefits, there are other pertinent reasons why you should convert to using solar power instead of fossil fuels.What other reasons should you consider when going solar? Here are seven compelling reasons</p>
       <hr />
-      <div className="row">
+      <div className="row py-5">
         <Slider {...settings}>
           
           <div className="col">
             <div className="card">
-              <img src={img} className="card-img-top" alt="..." />
+              <img src={img} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">7. Solar Power Is A Free Source of Energy</h5>
                 <span className="badge rounded-pill bg-primary">Read More</span>
@@ -117,7 +144,7 @@ export default function Blog() {
           
           <div className="col">
             <div className="card">
-              <img src={img} className="card-img-top" alt="..." />
+              <img src={img} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">7. Solar Power Is A Free Source of Energy</h5>
                 <span className="badge rounded-pill bg-primary">Read More</span>
@@ -127,7 +154,7 @@ export default function Blog() {
           
           <div className="col">
             <div className="card">
-              <img src={img} className="card-img-top" alt="..." />
+              <img src={img} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">7. Solar Power Is A Free Source of Energy</h5>
                 <span className="badge rounded-pill bg-primary">Read More</span>
@@ -136,7 +163,7 @@ export default function Blog() {
           </div>
           <div className="col">
             <div className="card">
-              <img src={img} className="card-img-top" alt="..." />
+              <img src={img} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">7. Solar Power Is A Free Source of Energy</h5>
                 <span className="badge rounded-pill bg-primary">Read More</span>
@@ -145,7 +172,7 @@ export default function Blog() {
           </div>
           <div className="col">
             <div className="card">
-              <img src={img} className="card-img-top" alt="..." />
+              <img src={img} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">7. Solar Power Is A Free Source of Energy</h5>
                 <span className="badge rounded-pill bg-primary">Read More</span>

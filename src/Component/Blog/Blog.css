@@ -18,3 +18,42 @@ margin-right: 1rem;
 .card-title:hover{
     color: cadetblue;
 }
+.slick-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  .slick-list {
+    position: relative;
+    display: block !important;
+    width: 100%;
+  }
+  .slick-slide div {
+    width: auto;
+  }
+  .slick-slide img {
+    width: calc(100% - 10px) !important;
+  }
+  
+  
+  
+  /* For the demo */
+  .slick-prev,
+  .slick-next {
+    z-index: 999 !important;
+  }
+  .slick-prev {
+    left: 25px !important;
+  }
+  .slick-next {
+    right: 25px !important;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: blue;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
