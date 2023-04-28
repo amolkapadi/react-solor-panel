@@ -1,7 +1,7 @@
 import React from 'react'
 import './SolorPanelCard.css'
 
-export default function SolorPanelCard() {
+export default function Bifacial() {
   const img = "https://www.networkforphl.org/wp-content/uploads/2020/01/iStock-1032683612-1392x0-c-default-q40.jpg"
 
   return (
@@ -11,13 +11,12 @@ export default function SolorPanelCard() {
           <div className="col">
             <div className="card1">
               <div className="card1-body">
-                <p className="card-text">Monocrystalline panels absorb 18% of sunlight available</p>
-                <p className="card-text">These panels perform better in unfavourable conditions like low sunlight hours and higher temperatures</p>
-                <p className="card-text">Their lifespan is of 25 years</p>
-                <p className="card-text">The monocrystalline panels are more expensive as compared to other panels since the manufacturing process of single-crystal silicon cells is complex.</p>
+                <p className="card-text">Thin-film solar cells are comparatively lightweight and more flexible than traditional silicon panels, thus making them easy to install.</p>
+                <p className="card-text">They are less efficient compared to silicon crystalline panels. However, they have a lesser carbon footprints and are comparatively cheaper than the other panels.</p>
+                <p className="card-text">Thin film panels are most suitable for large rooftop areas or places having wide open space.</p>
                 <div className="d-flex ">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Quotes</button>
-                  <button type="button" class="btn btn-danger ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">Create Auction</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">Get Quotes</button>
+                  <button type="button" class="btn btn-danger ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal7">Create Auction</button>
                 </div>
 
               </div>
@@ -32,7 +31,7 @@ export default function SolorPanelCard() {
 
 
       
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content p-3">
             <div class="modal-header">
@@ -46,7 +45,7 @@ export default function SolorPanelCard() {
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Inverter warranty</label><br />
-                <div class="form-check form-check-inline ">
+                <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
                   <label class="form-check-label" for="inlineRadio1">Yes</label>
                 </div>
@@ -58,7 +57,7 @@ export default function SolorPanelCard() {
 
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Insurance</label><br />
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline ">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
                   <label class="form-check-label" for="inlineRadio1">Yes</label>
                 </div>
@@ -70,7 +69,7 @@ export default function SolorPanelCard() {
 
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Other products</label><br />
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline ">
                   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                   <label class="form-check-label" for="inlineCheckbox1">MC4 Connecto</label>
                 </div>
@@ -118,8 +117,7 @@ export default function SolorPanelCard() {
 
 
 
-     
-      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content p-3">
             <div class="modal-header">

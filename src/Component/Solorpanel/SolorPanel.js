@@ -1,6 +1,10 @@
 import React from 'react'
 import './Solorpanel.css'
 import SolorPanelCard from '../SolorpanelCard/SolorPanelCard'
+import Polycrystalline from '../SolorpanelCard/Polycrystalline'
+import Bifacial from '../SolorpanelCard/Bifacial'
+import Thin from '../SolorpanelCard/Thin'
+import Perc from '../SolorpanelCard/Perc'
 export default function SolorPanel() {
     return (
         <div className='container mt-5' id='solar-panel'>
@@ -27,24 +31,19 @@ export default function SolorPanel() {
                 </ul>
                 <div className="tab-content ps-5" id="myTabContent">
                     <div className="tab-pane fade show active" id="Monocrystalline" role="tabpanel" aria-labelledby="Monocrystalline-tab">
-                        <h4 className='solor-text'>Monocrystalline</h4>
                         <SolorPanelCard />
                     </div>
                     <div className="tab-pane fade" id="Polycrystalline" role="tabpanel" aria-labelledby="Polycrystalline-tab">
-                        <h4 className='solor-text'>Polycrystalline</h4>
-                        <SolorPanelCard />
+                        <Polycrystalline />
                         </div>
                     <div className="tab-pane fade" id="Bifacial" role="tabpanel" aria-labelledby="Bifacial-tab">
-                        <h4 className='solor-text'>Bifacial</h4>
-                        <SolorPanelCard />
+                        <Bifacial />
                         </div>
                     <div className="tab-pane fade" id="Thin" role="tabpanel" aria-labelledby="Thin-tab">
-                        <h4 className='solor-text'>Thin Film</h4>
-                        <SolorPanelCard />
+                        <Thin />
                         </div>
                     <div className="tab-pane fade" id="PERC" role="tabpanel" aria-labelledby="PERC-tab">
-                        <h4 className='solor-text'>PERC</h4>
-                        <SolorPanelCard />
+                        <Perc />
                         </div>
                 </div>
                 </div>

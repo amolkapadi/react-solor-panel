@@ -1,7 +1,11 @@
 import React from 'react'
 import './About.css'
+import Navbar from '../../Layout/Navbar/Navbar'
+import Footer from '../../Layout/Footer/Footer'
 export default function About() {
   return (
+   <>
+    <Navbar />
     <div className='container py-5 mt-5'>
       <div className='row py-5'>
         <h3>About Us</h3> <hr />
@@ -29,5 +33,8 @@ export default function About() {
       </div>
 
     </div>
+
+    <Footer />
+   </>
   )
 }

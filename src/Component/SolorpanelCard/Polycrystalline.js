@@ -1,7 +1,7 @@
 import React from 'react'
 import './SolorPanelCard.css'
 
-export default function SolorPanelCard() {
+export default function Polycrystalline() {
   const img = "https://www.networkforphl.org/wp-content/uploads/2020/01/iStock-1032683612-1392x0-c-default-q40.jpg"
 
   return (
@@ -11,13 +11,14 @@ export default function SolorPanelCard() {
           <div className="col">
             <div className="card1">
               <div className="card1-body">
-                <p className="card-text">Monocrystalline panels absorb 18% of sunlight available</p>
-                <p className="card-text">These panels perform better in unfavourable conditions like low sunlight hours and higher temperatures</p>
+                <p className="card-text">Polycrystalline panels absorbs 15% of sunlight available</p>
+                <p className="card-text">These panels do not perform well in low light</p>
                 <p className="card-text">Their lifespan is of 25 years</p>
-                <p className="card-text">The monocrystalline panels are more expensive as compared to other panels since the manufacturing process of single-crystal silicon cells is complex.</p>
+                <p className="card-text">Polycrystalline solar panels have lower efficiency than monocrystalline solar panels as they are composed of multiple silicon crystals due to which there is limited room available for the electrons to move.</p>
+                <p className="card-text">These panels are more affordable than monocrystalline solar panels as the manufacturing process is simpler and less silicon is wasted during the whole process.</p>
                 <div className="d-flex ">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Quotes</button>
-                  <button type="button" class="btn btn-danger ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">Create Auction</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">Get Quotes</button>
+                  <button type="button" class="btn btn-danger ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal5">Create Auction</button>
                 </div>
 
               </div>
@@ -31,8 +32,7 @@ export default function SolorPanelCard() {
       </div>
 
 
-      
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content p-3">
             <div class="modal-header">
@@ -119,7 +119,7 @@ export default function SolorPanelCard() {
 
 
      
-      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content p-3">
             <div class="modal-header">
@@ -202,6 +202,7 @@ export default function SolorPanelCard() {
           </div>
         </div>
       </div>
+
 
 
     </>

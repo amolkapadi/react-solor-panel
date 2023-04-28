@@ -1,8 +1,11 @@
 import React from 'react'
 import './Profile.css'
+import Navbar from '../../Layout/Navbar/Navbar'
+import Footer from '../../Layout/Footer/Footer'
 export default function Profile() {
   return (
       <>
+      <Navbar />
              <div className='container py-5 mt-5'>
     <div className='row py-5'>
       <h3>My Profile</h3> <hr />
@@ -69,7 +72,7 @@ export default function Profile() {
     </div>
     </div>
 
-
+    <Footer />
       </>
   )
 }

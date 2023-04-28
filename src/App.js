@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home'
 import RootLayout from './Routes/RootLayout'
 import About from './Pages/About/About'
 import Profile from './Pages/Profile/Profile'
+import Login from './Pages/Login/Login'
 import './App.css'
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
+        element:<Login />
+      },
+      {
+        path:"/home",
         element:<Home />
       },
    
@@ -27,6 +32,7 @@ const router = createBrowserRouter([
         path:"/about",
         element:<About />
       },
+      
    
     ]
   }

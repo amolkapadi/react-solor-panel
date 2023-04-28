@@ -1,0 +1,35 @@
+form{
+    border-radius: 2px;
+    margin-top: 150px !important;
+    width: 24% !important;
+    background-color: white !important;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-top: 5px solid red;
+}
+
+.btn-login{
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: red;
+    
+}
+.btn-login:hover{
+    color: aliceblue;
+}
+
+.form-control{
+    color: rgba(0,0,0,.87);
+    border-bottom-color: rgba(0,0,0,.42);
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+        form {
+            width: 100% !important;
+        }
+      }
