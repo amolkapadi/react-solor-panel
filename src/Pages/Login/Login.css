@@ -1,4 +1,4 @@
-form{
+/* form{
     border-radius: 2px;
     margin-top: 150px !important;
     width: 24% !important;
@@ -8,16 +8,7 @@ form{
     border-top: 5px solid red;
 }
 
-.btn-login{
-    width: 100%;
-    border: none;
-    color: white;
-    background-color: red;
-    
-}
-.btn-login:hover{
-    color: aliceblue;
-}
+
 
 .form-control{
     color: rgba(0,0,0,.87);
@@ -32,4 +23,15 @@ form{
         form {
             width: 100% !important;
         }
-      }
+      } */
+
+      .btn-login{
+        width: 30%;
+        border: none;
+        color: white;
+        background-color: red;
+        
+    }
+    .btn-login:hover{
+        color: aliceblue;
+    }

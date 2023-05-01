@@ -15,7 +15,6 @@ export default function Login() {
   return (
     <div class="container-fluid">
     <form class="mx-auto" onSubmit={handleSubmit}>
-        <h4 class="text-center">Login</h4>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">User Name</label>
           <input type="text" 
@@ -36,7 +35,7 @@ export default function Login() {
           <div id="emailHelp" class="form-text mt-3">Password: - Admin@123</div>
         </div>
       
-        <button type="submit" class="btn btn-login mt-5">Login</button>
+        <button type="submit" class="btn btn-login ">Login</button>
       </form>
 </div>
 
