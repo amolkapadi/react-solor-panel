@@ -17,7 +17,32 @@ export default function Profile() {
       </button>
     </h2>
     <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the first item's accordion body.</div>
+    <div className='container-fluid py-5 '>
+      
+      <div className='py-5 timeline'>
+      <ul class="base-timeline">
+    <li class="base-timeline__item">
+      <span class="base-timeline__summary-text">order placed</span>
+    </li>
+    <li class="base-timeline__item">
+      <span class="base-timeline__summary-text">Request send to manufacture</span>
+    </li>
+    <li class="base-timeline__item">
+      <span class="base-timeline__summary-text">In-transit</span>
+    </li>
+    <li class="base-timeline__item">
+      <span class="base-timeline__summary-text">Deliverd</span>
+    </li>
+    <li class="base-timeline__item">
+      <span class="base-timeline__summary-text">Installation in process</span>
+    </li>
+    <li class="base-timeline__item">
+      <span class="base-timeline__summary-text">Installation Done</span>
+    </li>
+  </ul>
+      </div>
+      </div>
+  
     </div>
   </div>
   <div className="accordion-item">
@@ -46,32 +71,7 @@ export default function Profile() {
   </div>
   <br /><br />
 
-    <div className='container-fluid py-5 '>
-      
-    <div className='py-5 timeline'>
-    <ul class="base-timeline">
-  <li class="base-timeline__item">
-    <span class="base-timeline__summary-text">order placed</span>
-  </li>
-  <li class="base-timeline__item">
-    <span class="base-timeline__summary-text">Request send to manufacture</span>
-  </li>
-  <li class="base-timeline__item">
-    <span class="base-timeline__summary-text">In-transit</span>
-  </li>
-  <li class="base-timeline__item">
-    <span class="base-timeline__summary-text">Deliverd</span>
-  </li>
-  <li class="base-timeline__item">
-    <span class="base-timeline__summary-text">Installation in process</span>
-  </li>
-  <li class="base-timeline__item">
-    <span class="base-timeline__summary-text">Installation Done</span>
-  </li>
-</ul>
-    </div>
-    </div>
-
+   
     <Footer />
       </>
   )
