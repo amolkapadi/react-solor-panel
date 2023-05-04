@@ -138,202 +138,200 @@ export default function Profile() {
               </div>
             </div>
 
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="flush-headingThree">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
                 <button
-                  className="accordion-button collapsed"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
+                  data-bs-target="#collapseThree"
                   aria-expanded="false"
-                  aria-controls="flush-collapseThree"
+                  aria-controls="collapseThree"
                 >
                   My Order
                 </button>
               </h2>
               <div
-                id="flush-collapseThree"
-                className="accordion-collapse collapse"
-                aria-labelledby="flush-headingFive"
-                data-bs-parent="#accordionFlushExampleone"
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
               >
-                <div className="accordion-body">
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="flush-headingThree">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFour"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseFour"
+                <div class="accordion-body">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Product 1
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
                       >
-                        Product 1
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseFour"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="flush-headingOne"
-                      data-bs-parent="#accordionFlushExampleone"
-                    >
-                      <div className="accordion-body">
-                        <div className="container-fluid py-5">
-                          <div className="py-5 timeline">
-                            <ul class="base-timeline">
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  order placed
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Request send to manufacture
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  In-transit
-                                </span>
-                              </li>
-                              <li class="base-timeline__item deliverd">
-                                <span class="base-timeline__summary-text">
-                                  Deliverd
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Installation in process
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Installation Done
-                                </span>
-                              </li>
-                            </ul>
+                        <div class="accordion-body">
+                          <div className="container-fluid py-5">
+                            <div className="py-5 timeline">
+                              <ul class="base-timeline">
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    order placed
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Request send to manufacture
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    In-transit
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item deliverd">
+                                  <span class="base-timeline__summary-text">
+                                    Deliverd
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Installation in process
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Installation Done
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className="accordion-body">
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="flush-headingFive">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFive"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseFive"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Product 2
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
                       >
-                        Product 2
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseFive"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="flush-headingFive"
-                      data-bs-parent="#accordionFlushExampleone"
-                    >
-                      <div className="accordion-body">
-                        <div className="container-fluid py-5">
-                          <div className="py-5 timeline">
-                            <ul class="base-timeline">
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  order placed
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Request send to manufacture
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  In-transit
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Deliverd
-                                </span>
-                              </li>
-                              <li class="base-timeline__item installation">
-                                <span class="base-timeline__summary-text">
-                                  Installation in process
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Installation Done
-                                </span>
-                              </li>
-                            </ul>
+                        <div class="accordion-body">
+                          <div className="container-fluid py-5">
+                            <div className="py-5 timeline">
+                              <ul class="base-timeline">
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    order placed
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Request send to manufacture
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    In-transit
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Deliverd
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item installation">
+                                  <span class="base-timeline__summary-text">
+                                    Installation in process
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Installation Done
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className="accordion-body">
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="flush-headingSix">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseSix"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseSix"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingfour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsefour"
+                          aria-expanded="false"
+                          aria-controls="collapsefour"
+                        >
+                          Product 3
+                        </button>
+                      </h2>
+                      <div
+                        id="collapsefour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingfour"
+                        data-bs-parent="#accordionExample"
                       >
-                        Product 3
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseSix"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="flush-headingSix"
-                      data-bs-parent="#accordionFlushExampleone"
-                    >
-                      <div className="accordion-body">
-                        <div className="container-fluid py-5">
-                          <div className="py-5 timeline">
-                            <ul class="base-timeline">
-                              <li class="base-timeline__item order">
-                                <span class="base-timeline__summary-text">
-                                  order placed
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Request send to manufacture
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  In-transit
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Deliverd
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Installation in process
-                                </span>
-                              </li>
-                              <li class="base-timeline__item">
-                                <span class="base-timeline__summary-text">
-                                  Installation Done
-                                </span>
-                              </li>
-                            </ul>
+                        <div class="accordion-body">
+                          <div className="container-fluid py-5">
+                            <div className="py-5 timeline">
+                              <ul class="base-timeline">
+                                <li class="base-timeline__item order">
+                                  <span class="base-timeline__summary-text">
+                                    order placed
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Request send to manufacture
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    In-transit
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Deliverd
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Installation in process
+                                  </span>
+                                </li>
+                                <li class="base-timeline__item">
+                                  <span class="base-timeline__summary-text">
+                                    Installation Done
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -342,7 +340,6 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
