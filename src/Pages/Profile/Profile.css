@@ -27,13 +27,13 @@ span::first-letter{
       position: relative;
       display: block;
       z-index: 2;
-      width: 105%; /* change or remove*/
+      width: 109%; /* change or remove*/
     
   }
   
   .base-timeline::before {
         content: '';
-        width:92%;
+        width:90%;
         border-top: 2px solid rgb(180, 182, 183);
         display: inline-block;
         position: absolute;
@@ -70,7 +70,7 @@ span::first-letter{
     background-color: green;
   }
   .installation::before{
-    background-color: yellow;
+    background-color:blue;
   }
   .order::before{
     background-color: red;
@@ -78,8 +78,8 @@ span::first-letter{
   /* modifier with use of the data-year attribute */
   .base-timeline__item--data::before {
     content: attr(data-year);
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   
  
@@ -99,6 +99,6 @@ span::first-letter{
   
   
   
-  /* .timeline{
-    margin-left: 185px !important;
-  } */
+  .timeline{
+    margin-left: -30px !important;
+  }

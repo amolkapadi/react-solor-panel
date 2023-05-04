@@ -5,12 +5,9 @@ import Login from "../../Pages/Login/Login";
 export default function Navbar() {
 
 
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
   const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-  function handleLogin() {
-    // setIsLoggedIn(true);
-  }
+
    function logout(){
     localStorage.removeItem('isLoggedIn')
     window.location.reload();

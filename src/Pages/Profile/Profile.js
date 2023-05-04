@@ -29,40 +29,46 @@ export default function Profile() {
                 aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div className="container-fluid py-5 ">
-                  <div className="py-5 timeline">
-                    <ul class="base-timeline">
-                      <li class="base-timeline__item">
-                        <span class="base-timeline__summary-text">
-                          order placed
-                        </span>
-                      </li>
-                      <li class="base-timeline__item">
-                        <span class="base-timeline__summary-text">
-                          Request send to manufacture
-                        </span>
-                      </li>
-                      <li class="base-timeline__item">
-                        <span class="base-timeline__summary-text">
-                          In-transit
-                        </span>
-                      </li>
-                      <li class="base-timeline__item">
-                        <span class="base-timeline__summary-text">
-                          Deliverd
-                        </span>
-                      </li>
-                      <li class="base-timeline__item">
-                        <span class="base-timeline__summary-text">
-                          Installation in process
-                        </span>
-                      </li>
-                      <li class="base-timeline__item">
-                        <span class="base-timeline__summary-text">
-                          Installation Done
-                        </span>
-                      </li>
-                    </ul>
+                <div className="container">
+                  <div className="row">
+                    <div className="card p-3 ">
+                      <div className="d-flex justify-content-between">
+                        <h5>Product 1</h5>
+                        <button
+                          className="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="card p-3 ">
+                      <div className="d-flex justify-content-between">
+                        <h5>Product 2</h5>
+                        <button
+                          className="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="card p-3 ">
+                      <div className="d-flex justify-content-between">
+                        <h5>Product 3</h5>
+                        <button
+                          className="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -87,11 +93,47 @@ export default function Profile() {
                 aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div className="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> className. This
-                  is the second item's accordion body. Let's imagine this being
-                  filled with some actual content.
+                <div className="container">
+                  <div className="row">
+                    <div className="card p-3 ">
+                      <div className="d-flex justify-content-between">
+                        <h5>Product 1</h5>
+                        <button
+                          className="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal1"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="card p-3 ">
+                      <div className="d-flex justify-content-between">
+                        <h5>Product 2</h5>
+                        <button
+                          className="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal1"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="card p-3 ">
+                      <div className="d-flex justify-content-between">
+                        <h5>Product 3</h5>
+                        <button
+                          className="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal1"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -299,6 +341,63 @@ export default function Profile() {
                   </div>
                 </div>
               </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>L1 :- The Best Choice </p>
+              <p>L2 </p>
+              <p>L3 </p>
+              <p>L4 </p>
+              <p>L5 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Quote 1 :- The Best Choice </p>
+              <p>Quote 2 </p>
+              <p>Quote 3 </p>
+              <p>Quote 4 </p>
+              <p>Quote 5 </p>
             </div>
           </div>
         </div>
