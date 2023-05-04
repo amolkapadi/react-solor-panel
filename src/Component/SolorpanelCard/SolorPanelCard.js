@@ -69,9 +69,7 @@ export default function SolorPanelCard() {
           </div>
         </div>
       </div>
-
-
-      
+     
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content p-3">
@@ -89,27 +87,25 @@ export default function SolorPanelCard() {
         </div>
         <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Inverter warranty</label><br />
-
         <div class="form-check form-check-inline">
                 <input  class="form-check-input" type="radio" name="inverterWarranty" value="5 Years" onChange={(event) => setUserData({ ...userData, inverterWarranty: event.target.value })} required />
               <label class="form-check-label">5 Years</label>
              </div>
              <div class="form-check form-check-inline">
-                <input type="radio" name="inverterWarranty" value="10 Years" onChange={(event) => setUserData({ ...userData, inverterWarranty: event.target.value })} required />
+                <input  class="form-check-input" type="radio" name="inverterWarranty" value="10 Years" onChange={(event) => setUserData({ ...userData, inverterWarranty: event.target.value })} required />
                 <label class="form-check-label"> 10 Years</label>
             </div>
-         
         </div>
+
+
         <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Insurance</label><br />
-
-       
           <div class="form-check form-check-inline">
-                <input type="radio" name="insurance" value="yes" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
+                <input  class="form-check-input" type="radio" name="insurance" value="yes" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
                 <label class="form-check-label"> Yes </label>
           </div>
           <div class="form-check form-check-inline">
-                <input type="radio" name="insurance" value="no" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
+                <input  class="form-check-input" type="radio" name="insurance" value="no" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
                 <label class="form-check-label"> No</label>
             </div>
         </div>
@@ -120,48 +116,41 @@ export default function SolorPanelCard() {
         
                 <div class="form-check form-check-inline">
 
-                <input type="checkbox" name="otherProducts" value="MC4 Connecto" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, mC4Connecto: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="MC4 Connecto" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, mC4Connecto: event.target.checked } })} />
                 <label class="form-check-label"> MC4 Connecto </label>
               </div>
               <div class="form-check form-check-inline">
 
-                <input type="checkbox" name="otherProducts" value="Solar DC Wires" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarDCWires: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="Solar DC Wires" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarDCWires: event.target.checked } })} />
                 <label class="form-check-label">  Solar DC Wires</label>
              </div>
              <div class="form-check form-check-inline">
 
-                <input type="checkbox" name="otherProducts" value="Solar Structure" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarStructure: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="Solar Structure" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarStructure: event.target.checked } })} />
                 <label class="form-check-label">Solar Structure   </label>
            </div>
            <div class="form-check form-check-inline">
               
-                <input type="checkbox" name="otherProducts" value="Crimping Tool" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, crimpingTool: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="Crimping Tool" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, crimpingTool: event.target.checked } })} />
                 <label class="form-check-label">Crimping Tool</label>
               </div>
               <div class="form-check form-check-inline">
              
-                <input type="checkbox" name="otherProducts" value="Junction Boxes" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, junctionBoxes: event.target.checked } })} />
+                <input  class="form-check-input" type="checkbox" name="otherProducts" value="Junction Boxes" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, junctionBoxes: event.target.checked } })} />
                 <label class="form-check-label"> Junction Boxes </label>
              </div>
          
-            <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="otherProducts" value="Other"onChange={toggleInput} id="inlineCheckbox2"   />
+            <div class="form-check form-check-inline">
+                  <input  class="form-check-input" type="checkbox" name="otherProducts" value="Other"onChange={toggleInput} id="inlineCheckbox2"   />
                   <label class="form-check-label" >Other</label>
                 </div>
                 {isOpen && <input class="form-control" type="text" />}
-              
-
-          
-                <input type="checkbox" name="otherProducts" value="accessories:- sq.ft" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, accessories: event.target.checked } })} />
-                <label class="form-check-label"> accessories:- sq.ft</label>
             
-           
-         
           </div>
           <div class="mb-3">
 
           <label>
-          Terrace Area </label><br />
+          Terrace Area : sq.ft</label><br />
             <input type="text"class="form-control" onChange={(event) => setUserData({ ...userData, terraceArea: event.target.value })} required />
          
           </div>
@@ -179,10 +168,6 @@ export default function SolorPanelCard() {
 
       {currentStep === 1 && (
         <div>
-        <p>Type- Monocrystalline Panel </p>
-        <p>Capacity- 50 kW</p>
-        <p>Inverter type- 10 years </p>
-        <p> Insurance- Yes </p>
         <div className="row mt-2">
           <div className="col-md-6">
             {" "}
@@ -307,7 +292,7 @@ export default function SolorPanelCard() {
               <label class="form-check-label">5 Years</label>
              </div>
              <div class="form-check form-check-inline">
-                <input type="radio" name="inverterWarranty" value="10 Years" onChange={(event) => setUserData({ ...userData, inverterWarranty: event.target.value })} required />
+                <input  class="form-check-input" type="radio" name="inverterWarranty" value="10 Years" onChange={(event) => setUserData({ ...userData, inverterWarranty: event.target.value })} required />
                 <label class="form-check-label"> 10 Years</label>
             </div>
          
@@ -317,11 +302,11 @@ export default function SolorPanelCard() {
 
        
           <div class="form-check form-check-inline">
-                <input type="radio" name="insurance" value="yes" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
+                <input  class="form-check-input" type="radio" name="insurance" value="yes" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
                 <label class="form-check-label"> Yes </label>
           </div>
           <div class="form-check form-check-inline">
-                <input type="radio" name="insurance" value="no" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
+                <input  class="form-check-input" type="radio" name="insurance" value="no" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
                 <label class="form-check-label"> No</label>
             </div>
         </div>
@@ -332,48 +317,40 @@ export default function SolorPanelCard() {
         
                 <div class="form-check form-check-inline">
 
-                <input type="checkbox" name="otherProducts" value="MC4 Connecto" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, mC4Connecto: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="MC4 Connecto" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, mC4Connecto: event.target.checked } })} />
                 <label class="form-check-label"> MC4 Connecto </label>
               </div>
               <div class="form-check form-check-inline">
 
-                <input type="checkbox" name="otherProducts" value="Solar DC Wires" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarDCWires: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="Solar DC Wires" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarDCWires: event.target.checked } })} />
                 <label class="form-check-label">  Solar DC Wires</label>
              </div>
              <div class="form-check form-check-inline">
 
-                <input type="checkbox" name="otherProducts" value="Solar Structure" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarStructure: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="Solar Structure" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarStructure: event.target.checked } })} />
                 <label class="form-check-label">Solar Structure   </label>
            </div>
            <div class="form-check form-check-inline">
               
-                <input type="checkbox" name="otherProducts" value="Crimping Tool" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, crimpingTool: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="Crimping Tool" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, crimpingTool: event.target.checked } })} />
                 <label class="form-check-label">Crimping Tool</label>
               </div>
               <div class="form-check form-check-inline">
              
-                <input type="checkbox" name="otherProducts" value="Junction Boxes" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, junctionBoxes: event.target.checked } })} />
+                <input class="form-check-input" type="checkbox" name="otherProducts" value="Junction Boxes" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, junctionBoxes: event.target.checked } })} />
                 <label class="form-check-label"> Junction Boxes </label>
              </div>
          
-            <div class="form-check">
+            <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" name="otherProducts" value="Other"onChange={toggleInput} id="inlineCheckbox2"   />
                   <label class="form-check-label" >Other</label>
                 </div>
                 {isOpen && <input class="form-control" type="text" />}
-              
-
-          
-                <input type="checkbox" name="otherProducts" value="accessories:- sq.ft" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, accessories: event.target.checked } })} />
-                <label class="form-check-label"> accessories:- sq.ft</label>
-            
-           
-         
           </div>
           <div class="mb-3">
 
           <label>
-          Terrace Area </label><br />
+          Terrace Area : sq.ft </label><br />
             <input type="text"class="form-control" onChange={(event) => setUserData({ ...userData, terraceArea: event.target.value })} required />
          
           </div>
@@ -414,8 +391,6 @@ export default function SolorPanelCard() {
         </div>
       </div>
       </div>
-
-
 
     </>
   )

@@ -28,7 +28,7 @@ ul, li {
       position: relative;
       display: block;
       z-index: 2;
-      width: 100%; /* change or remove*/
+      width: 105%; /* change or remove*/
     
   }
   
@@ -67,7 +67,15 @@ ul, li {
           box-sizing: border-box;
           
   }
-  
+  .deliverd::before{
+    background-color: green;
+  }
+  .installation::before{
+    background-color: yellow;
+  }
+  .order::before{
+    background-color: red;
+  }
   /* modifier with use of the data-year attribute */
   .base-timeline__item--data::before {
     content: attr(data-year);
@@ -92,6 +100,6 @@ ul, li {
   
   
   
-  .timeline{
+  /* .timeline{
     margin-left: 185px !important;
-  }
+  } */

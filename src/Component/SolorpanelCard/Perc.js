@@ -15,15 +15,15 @@ export default function Polycrystalline() {
   const [userData, setUserData] = useState({});
   const [currentStep, setCurrentStep] = useState(0);
   const [currentStep1, setCurrentStep1] = useState(0);
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setCurrentStep(currentStep + 1);
   };
-  const handleSubmit1 =(event)=>{
+  const handleSubmit1 = (event) => {
     event.preventDefault();
     setCurrentStep1(currentStep1 + 1);
-  }
+  };
   const handleConfirm = (event) => {
     event.preventDefault();
     setCurrentStep(currentStep + 1);
@@ -31,7 +31,6 @@ export default function Polycrystalline() {
   const handleConfirm1 = (event) => {
     event.preventDefault();
     setCurrentStep1(currentStep1 + 1);
-
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -147,6 +146,7 @@ export default function Polycrystalline() {
                       </div>
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="radio"
                           name="inverterWarranty"
                           value="10 Years"
@@ -169,6 +169,7 @@ export default function Polycrystalline() {
 
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="radio"
                           name="insurance"
                           value="yes"
@@ -184,6 +185,7 @@ export default function Polycrystalline() {
                       </div>
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="radio"
                           name="insurance"
                           value="no"
@@ -206,6 +208,7 @@ export default function Polycrystalline() {
 
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="checkbox"
                           name="otherProducts"
                           value="MC4 Connecto"
@@ -223,6 +226,7 @@ export default function Polycrystalline() {
                       </div>
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="checkbox"
                           name="otherProducts"
                           value="Solar DC Wires"
@@ -240,6 +244,7 @@ export default function Polycrystalline() {
                       </div>
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="checkbox"
                           name="otherProducts"
                           value="Solar Structure"
@@ -257,6 +262,7 @@ export default function Polycrystalline() {
                       </div>
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="checkbox"
                           name="otherProducts"
                           value="Crimping Tool"
@@ -274,6 +280,7 @@ export default function Polycrystalline() {
                       </div>
                       <div class="form-check form-check-inline">
                         <input
+                         class="form-check-input"
                           type="checkbox"
                           name="otherProducts"
                           value="Junction Boxes"
@@ -290,7 +297,7 @@ export default function Polycrystalline() {
                         <label class="form-check-label"> Junction Boxes </label>
                       </div>
 
-                      <div class="form-check">
+                      <div class="form-check form-check-inline">
                         <input
                           class="form-check-input"
                           type="checkbox"
@@ -302,28 +309,9 @@ export default function Polycrystalline() {
                         <label class="form-check-label">Other</label>
                       </div>
                       {isOpen && <input class="form-control" type="text" />}
-
-                      <input
-                        type="checkbox"
-                        name="otherProducts"
-                        value="accessories:- sq.ft"
-                        onChange={(event) =>
-                          setUserData({
-                            ...userData,
-                            otherProducts: {
-                              ...userData.otherProducts,
-                              accessories: event.target.checked,
-                            },
-                          })
-                        }
-                      />
-                      <label class="form-check-label">
-                        {" "}
-                        accessories:- sq.ft
-                      </label>
                     </div>
                     <div class="mb-3">
-                      <label>Terrace Area </label>
+                      <label>Terrace Area :sq.ft </label>
                       <br />
                       <input
                         type="text"
@@ -360,10 +348,7 @@ export default function Polycrystalline() {
 
                 {currentStep === 1 && (
                   <div>
-                    <p>Type:- MonoPERC Panel</p>
-                    <p>Capacity- 4kW</p>
-                    <p>Inverter- 10 years</p>
-                    <p> Insurance- Yes </p>
+                   
                     <div className="row mt-2">
                       <div className="col-md-6">
                         {" "}
@@ -543,138 +528,306 @@ export default function Polycrystalline() {
         </div>
       </div>
 
-       {/* Second Model  Create Auction */}
+      {/* Second Model  Create Auction */}
 
-       <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="exampleModal9"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content p-3">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Create Auction</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title" id="exampleModalLabel">
+                Create Auction
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <div class="mb-3">
-    <div>
-      {currentStep1 === 0 && (
-        <form onSubmit={handleConfirm1}>
-        <div class="mb-3">
-            <label class="form-label">capacity :- kwh</label>
-            <input  type="text" class="form-control" onChange={(event) => setUserData({ ...userData, capacity: event.target.value })} required />
-        </div>
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Inverter warranty</label><br />
+                <div>
+                  {currentStep1 === 0 && (
+                    <form onSubmit={handleConfirm1}>
+                      <div class="mb-3">
+                        <label class="form-label">capacity :- kwh</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          onChange={(event) =>
+                            setUserData({
+                              ...userData,
+                              capacity: event.target.value,
+                            })
+                          }
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        >
+                          Inverter warranty
+                        </label>
+                        <br />
 
-        <div class="form-check form-check-inline">
-                <input  class="form-check-input" type="radio" name="inverterWarranty" value="5 Years" onChange={(event) => setUserData({ ...userData, inverterWarranty: event.target.value })} required />
-              <label class="form-check-label">5 Years</label>
-             </div>
-             <div class="form-check form-check-inline">
-                <input type="radio" name="inverterWarranty" value="10 Years" onChange={(event) => setUserData({ ...userData, inverterWarranty: event.target.value })} required />
-                <label class="form-check-label"> 10 Years</label>
-            </div>
-         
-        </div>
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Insurance</label><br />
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inverterWarranty"
+                            value="5 Years"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                inverterWarranty: event.target.value,
+                              })
+                            }
+                            required
+                          />
+                          <label class="form-check-label">5 Years</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            type="radio"
+                            name="inverterWarranty"
+                            value="10 Years"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                inverterWarranty: event.target.value,
+                              })
+                            }
+                            required
+                          />
+                          <label class="form-check-label"> 10 Years</label>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        >
+                          Insurance
+                        </label>
+                        <br />
 
-       
-          <div class="form-check form-check-inline">
-                <input type="radio" name="insurance" value="yes" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
-                <label class="form-check-label"> Yes </label>
-          </div>
-          <div class="form-check form-check-inline">
-                <input type="radio" name="insurance" value="no" onChange={(event) => setUserData({ ...userData, insurance: event.target.value })} required />
-                <label class="form-check-label"> No</label>
-            </div>
-        </div>
-        <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Other products</label><br />
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="insurance"
+                            value="yes"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                insurance: event.target.value,
+                              })
+                            }
+                            required
+                          />
+                          <label class="form-check-label"> Yes </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="insurance"
+                            value="no"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                insurance: event.target.value,
+                              })
+                            }
+                            required
+                          />
+                          <label class="form-check-label"> No</label>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        >
+                          Other products
+                        </label>
+                        <br />
 
-          
-        
-                <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="otherProducts"
+                            value="MC4 Connecto"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                otherProducts: {
+                                  ...userData.otherProducts,
+                                  mC4Connecto: event.target.checked,
+                                },
+                              })
+                            }
+                          />
+                          <label class="form-check-label">MC4 Connecto</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="otherProducts"
+                            value="Solar DC Wires"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                otherProducts: {
+                                  ...userData.otherProducts,
+                                  solarDCWires: event.target.checked,
+                                },
+                              })
+                            }
+                          />
+                          <label class="form-check-label">Solar DC Wires</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="otherProducts"
+                            value="Solar Structure"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                otherProducts: {
+                                  ...userData.otherProducts,
+                                  solarStructure: event.target.checked,
+                                },
+                              })
+                            }
+                          />
+                          <label class="form-check-label">
+                            Solar Structure
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="otherProducts"
+                            value="Crimping Tool"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                otherProducts: {
+                                  ...userData.otherProducts,
+                                  crimpingTool: event.target.checked,
+                                },
+                              })
+                            }
+                          />
+                          <label class="form-check-label">Crimping Tool</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="otherProducts"
+                            value="Junction Boxes"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                otherProducts: {
+                                  ...userData.otherProducts,
+                                  junctionBoxes: event.target.checked,
+                                },
+                              })
+                            }
+                          />
+                          <label class="form-check-label">
+                            {" "}
+                            Junction Boxes{" "}
+                          </label>
+                        </div>
 
-                <input type="checkbox" name="otherProducts" value="MC4 Connecto" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, mC4Connecto: event.target.checked } })} />
-                <label class="form-check-label"> MC4 Connecto </label>
-              </div>
-              <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="otherProducts"
+                            value="Other"
+                            onChange={toggleInput}
+                            id="inlineCheckbox2"
+                          />
+                          <label class="form-check-label">Other</label>
+                        </div>
+                        {isOpen && <input class="form-control" type="text" />}
+                      </div>
+                      <div class="mb-3">
+                        <label>Terrace Area : sq.ft</label>
+                        <br />
+                        <input
+                          type="text"
+                          class="form-control"
+                          onChange={(event) =>
+                            setUserData({
+                              ...userData,
+                              terraceArea: event.target.value,
+                            })
+                          }
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label>
+                          Terrace photo
+                          <input
+                            type="file"
+                            onChange={(event) =>
+                              setUserData({
+                                ...userData,
+                                terracePhoto: event.target.value,
+                              })
+                            }
+                          />
+                        </label>
+                      </div>
 
-                <input type="checkbox" name="otherProducts" value="Solar DC Wires" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarDCWires: event.target.checked } })} />
-                <label class="form-check-label">  Solar DC Wires</label>
-             </div>
-             <div class="form-check form-check-inline">
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </form>
+                  )}
 
-                <input type="checkbox" name="otherProducts" value="Solar Structure" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, solarStructure: event.target.checked } })} />
-                <label class="form-check-label">Solar Structure   </label>
-           </div>
-           <div class="form-check form-check-inline">
-              
-                <input type="checkbox" name="otherProducts" value="Crimping Tool" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, crimpingTool: event.target.checked } })} />
-                <label class="form-check-label">Crimping Tool</label>
-              </div>
-              <div class="form-check form-check-inline">
-             
-                <input type="checkbox" name="otherProducts" value="Junction Boxes" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, junctionBoxes: event.target.checked } })} />
-                <label class="form-check-label"> Junction Boxes </label>
-             </div>
-         
-            <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="otherProducts" value="Other"onChange={toggleInput} id="inlineCheckbox2"   />
-                  <label class="form-check-label" >Other</label>
+                  {currentStep1 === 1 && (
+                    <div>
+                      <span
+                        style={{
+                          fontSize: "50px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                        role="img"
+                        aria-label="image"
+                      >
+                        🎉
+                      </span>
+                      <h1 className="text-center">Congratulations!</h1>
+                    </div>
+                  )}
                 </div>
-                {isOpen && <input class="form-control" type="text" />}
-              
-
-          
-                <input type="checkbox" name="otherProducts" value="accessories:- sq.ft" onChange={(event) => setUserData({ ...userData, otherProducts: { ...userData.otherProducts, accessories: event.target.checked } })} />
-                <label class="form-check-label"> accessories:- sq.ft</label>
-            
-           
-         
-          </div>
-          <div class="mb-3">
-
-          <label>
-          Terrace Area </label><br />
-            <input type="text"class="form-control" onChange={(event) => setUserData({ ...userData, terraceArea: event.target.value })} required />
-         
-          </div>
-          <div class="mb-3">
-
-          <label>
-          Terrace photo
-            <input type="file" onChange={(event) => setUserData({ ...userData,  terracePhoto: event.target.value })} />
-          </label>
-        </div>
-
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      )}
-
-     
-
-      {currentStep1 === 1 && (
-        <div>
-        <span
-          style={{
-            fontSize: "50px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-          role="img"
-          aria-label="image"
-        >
-          🎉
-        </span>
-        <h1 className="text-center">Congratulations!</h1>
-      </div>
-      )}
-    </div>
-            </div> 
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   );
