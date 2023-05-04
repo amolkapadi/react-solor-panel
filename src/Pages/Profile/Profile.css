@@ -6,13 +6,12 @@
 
 ul, li {
     margin:0;
-    padding: 0;
-    
-  }
-  span::first-letter{
+    padding: 0;   
+}
+
+span::first-letter{
       text-transform: capitalize;
-  }
-  
+} 
   body {
     font-family: 'Roboto Condensed', serif;
   }

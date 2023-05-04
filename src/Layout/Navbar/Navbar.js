@@ -1,8 +1,22 @@
-import React from "react";
+import {useState} from "react";
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import Login from "../../Pages/Login/Login";
 export default function Navbar() {
+
+
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+  function handleLogin() {
+    // setIsLoggedIn(true);
+  }
+   function logout(){
+    localStorage.removeItem('isLoggedIn')
+    window.location.reload();
+
+  }
+
   return (
 <>
     
@@ -18,20 +32,33 @@ export default function Navbar() {
               <a className="nav-link" href="#solar-panel">Solar Panel</a>
             </li>
             <li className="nav-item px-3">
-              <a className="nav-link " href="https://solarrooftop.gov.in/rooftop_calculator">Solar Calculator</a>
+              <a className="nav-link " href="https://solarrooftop.gov.in/rooftop_calculator"  target="_blank">Solar Calculator</a>
             </li>
             <li className="nav-item px-3">
               <a className="nav-link" href="#">Biomass Briquettes</a>
             </li>
-            <li className="nav-item px-3" >
+           { isLoggedIn && <li className="nav-item px-3" >
               <Link className="nav-link" to="/profile">My Profile</Link>
-            </li>
+            </li>}
             <li className="nav-item px-3">
               <Link className="nav-link" to="/about">About Us</Link>
             </li>
-            <li className="nav-item px-3">
-              <Link className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal11" >LogIn</Link>
-            </li>
+            {/* <li className="nav-item px-3">
+              <Link className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal11"   >{isLoggedIn ? "Logout" : "Login"}</Link>
+            </li> */}
+
+            {isLoggedIn ? (
+
+    <li className="nav-item px-3" onClick={logout}>
+     <Link className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal11">Logout</Link>
+    </li>
+  ) : (
+    <li className="nav-item px-3">
+     <Link className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal11">LogIn</Link>
+
+    </li>
+  )}
+            
           </ul>
 
         </div>

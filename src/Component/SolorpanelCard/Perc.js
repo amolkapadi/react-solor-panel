@@ -6,6 +6,9 @@ import WaareeSolor from "../../img/waaree-solar.jpg";
 import AdaniSolar from "../../img/adani-solar.jpg";
 import LoomSolar from "../../img/loom-solor.jpg";
 import LuminousSolor from "../../img/luminous-solar.jpg";
+import MahindraSolar from '../../img/mahindta-solar.jpg';
+import VikramSolar from '../../img/vikram-solar.jpg'
+
 import "./Perc.css";
 
 export default function Polycrystalline() {
@@ -322,7 +325,7 @@ export default function Polycrystalline() {
                             terraceArea: event.target.value,
                           })
                         }
-                        required
+                        
                       />
                     </div>
                     <div class="mb-3">
@@ -347,79 +350,113 @@ export default function Polycrystalline() {
                 )}
 
                 {currentStep === 1 && (
-                  <div>
-                   
-                    <div className="row mt-2">
-                      <div className="col-md-6">
-                        {" "}
-                        <img
-                          src={WaareeSolor}
-                          className="imng-fluid mb-2"
-                        />{" "}
-                      </div>
-                      <div className="col-md-6">
-                        {" "}
-                        <p> 1,90,415/-</p>{" "}
-                      </div>
+                   <div>
+                   <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                     <div className="col">
+                       <img
+                         src={WaareeSolor}
+                         className="imng-fluid mb-2"
+                       />
+                     </div>
+                     <div className="col">
+                       <p> 1,90,415/-</p>
                     </div>
-                    <div className="row mt-2">
-                      <div className="col-md-6">
-                        {" "}
-                        <img
-                          src={TataPowerSolor}
-                          className="imng-fluid mb-2"
-                        />{" "}
-                      </div>
-                      <div className="col-md-6">
-                        {" "}
-                        <p> 2,22,570/-</p>{" "}
-                      </div>
+                     <div className="col">
+                     <button
+                     className=" btn btn-primary "
+                     type="button"
+                     onClick={handleConfirm}
+                   >
+                     Submit
+                   </button>
                     </div>
-                    <div className="row mt-2">
-                      <div className="col-md-6">
-                        {" "}
-                        <img src={LoomSolar} className="imng-fluid mb-2" />{" "}
-                      </div>
-                      <div className="col-md-6">
-                        {" "}
-                        <p> 2,38,940/-</p>{" "}
-                      </div>
-                    </div>
-                    <div className="row mt-2">
-                      <div className="col-md-6">
-                        {" "}
-                        <img
-                          src={LuminousSolor}
-                          className="imng-fluid mb-2"
-                        />{" "}
-                      </div>
-                      <div className="col-md-6">
-                        {" "}
-                        <p> 2,53,260/-</p>{" "}
-                      </div>
-                    </div>
-                    <div className="row mt-2">
-                      <div className="col-md-6">
-                        {" "}
-                        <img
-                          src={AdaniSolar}
-                          className="imng-fluid mb-2"
-                        />{" "}
-                      </div>
-                      <div className="col-md-6">
-                        {" "}
-                        <p>2,58,415/-</p>{" "}
-                      </div>
-                    </div>
-
-                    <button
-                      className=" btn btn-primary mt-4"
-                      type="button"
-                      onClick={handleConfirm}
-                    >
-                      Confirm
-                    </button>
-                  </div>
+                   </div>
+           
+                   <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                     <div className="col">
+                       <img
+                         src={TataPowerSolor}
+                         className="imng-fluid mb-2"
+                       />
+                     </div>
+                     <div className="col">
+                       <p> 2,22,570/-</p>
+                     </div>
+           
+                   <div className='col'>
+                   <button
+                     className=" btn btn-primary "
+                     type="button"
+                     onClick={handleConfirm}
+                   >
+                     Submit
+                   </button>
+                   </div>
+                   </div>
+           
+                   <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                     <div className="col">
+                       <img src={AdaniSolar} className="imng-fluid mb-2" />
+                     </div>
+                     <div className="col">
+                       <p> 2,38,940/-</p>
+                     </div>
+                     <div className='col'>
+                   <button
+                     className=" btn btn-primary "
+                     type="button"
+                     onClick={handleConfirm}
+                   >
+                     Submit
+                   </button>
+                   </div>
+                   </div>
+           
+                   <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                     <div className="col">
+                       <img
+                         src={MahindraSolar}
+                         className="imng-fluid mb-2"
+                       />
+                     </div>
+                     <div className="col">
+                       <p> 2,53,260/-</p>
+                     </div>
+           
+                     <div className='col'>
+                   <button
+                     className=" btn btn-primary "
+                     type="button"
+                     onClick={handleConfirm}
+                   >
+                     Submit
+                   </button>
+                   </div>
+                   </div>
+           
+                   <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                     <div className="col">
+                       <img
+                         src={VikramSolar}
+                         className="imng-fluid mb-2"
+                       />
+                     </div>
+                     <div className="col">
+                       <p>2,58,415/-</p>
+                     </div>
+                     <div className='col'>
+                   <button
+                     className=" btn btn-primary "
+                     type="button"
+                     onClick={handleConfirm}
+                   >
+                     Submit
+                   </button>
+                   </div>
+                   </div>
+           
+                 
+                 </div>
                 )}
 
                 {currentStep === 2 && (
@@ -782,7 +819,7 @@ export default function Polycrystalline() {
                               terraceArea: event.target.value,
                             })
                           }
-                          required
+                          
                         />
                       </div>
                       <div class="mb-3">

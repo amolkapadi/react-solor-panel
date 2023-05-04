@@ -1,37 +1,21 @@
-/* form{
-    border-radius: 2px;
-    margin-top: 150px !important;
-    width: 24% !important;
-    background-color: white !important;
-    padding: 50px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-top: 5px solid red;
-}
 
-
-
-.form-control{
-    color: rgba(0,0,0,.87);
-    border-bottom-color: rgba(0,0,0,.42);
-    box-shadow: none !important;
-    border: none;
-    border-bottom: 1px solid;
-    border-radius: 4px 4px 0 0;
-    }
-
-    @media only screen and (max-width: 600px) {
-        form {
-            width: 100% !important;
-        }
-      } */
 
       .btn-login{
         width: 30%;
         border: none;
-        color: white;
+        color: white !important;
         background-color: red;
         
     }
     .btn-login:hover{
         color: aliceblue;
+    }
+   button > Link{
+        text-decoration: none;
+        color: white !important;
+        background-color: aliceblue;
+    }
+    .mt-2{
+        opacity: 0.8;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     }

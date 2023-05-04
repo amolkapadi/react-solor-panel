@@ -58,7 +58,7 @@ export default function Blog() {
               <img src={Embrace} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Embrace green tech revolution or risk falling behind...</h5>
-               <a href="https://news.un.org/en/story/2023/03/1134672"> <span className="badge rounded-pill bg-primary" >Read More</span></a>
+               <a href="https://news.un.org/en/story/2023/03/1134672"  target="_blank"> <span className="badge rounded-pill bg-primary" >Read More</span></a>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Blog() {
               <img src={future} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Future of solar energy expansion in India</h5>
-                <a href="https://timesofindia.indiatimes.com/blogs/voices/future-of-solar-energy-expansion-in-india/"> <span className="badge rounded-pill bg-primary" >Read More</span></a>
+                <a href="https://timesofindia.indiatimes.com/blogs/voices/future-of-solar-energy-expansion-in-india/"  target="_blank"> <span className="badge rounded-pill bg-primary" >Read More</span></a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function Blog() {
               <img src={img} className="img-fluid" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Despite challenges, India's plans for energy sector are ambitious.</h5>
-                <a href="https://www.businesstoday.in/magazine/industry/story/despite-challenges-indias-plans-for-energy-sector-are-ambitious-it-needs-proper-execution-369010-2023-02-05"> <span className="badge rounded-pill bg-primary" >Read More</span></a>
+                <a  target="_blank" href="https://www.businesstoday.in/magazine/industry/story/despite-challenges-indias-plans-for-energy-sector-are-ambitious-it-needs-proper-execution-369010-2023-02-05"> <span className="badge rounded-pill bg-primary" >Read More</span></a>
 
               </div>
             </div>

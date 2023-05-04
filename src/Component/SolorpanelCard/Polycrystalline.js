@@ -188,7 +188,7 @@ export default function Polycrystalline() {
 
           <label>
           Terrace Area : sq.ft </label><br />
-            <input type="text"class="form-control" onChange={(event) => setUserData({ ...userData, terraceArea: event.target.value })} required />
+            <input type="text"class="form-control" onChange={(event) => setUserData({ ...userData, terraceArea: event.target.value })}  />
          
           </div>
           <div class="mb-3">
@@ -204,78 +204,113 @@ export default function Polycrystalline() {
       )}
 
       {currentStep === 1 && (
-        <div>
-        <div className="row mt-2">
-          <div className="col-md-6">
-            {" "}
-            <img
-              src={WaareeSolor}
-              className="imng-fluid mb-2"
-            />{" "}
+         <div>
+         <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+           <div className="col">
+             <img
+               src={WaareeSolor}
+               className="imng-fluid mb-2"
+             />
+           </div>
+           <div className="col">
+             <p> 79,100/-</p>
           </div>
-          <div className="col-md-6">
-            {" "}
-            <p> 79,100/-</p>{" "}
+           <div className="col">
+           <button
+           className=" btn btn-primary "
+           type="button"
+           onClick={handleConfirm}
+         >
+           Submit
+         </button>
           </div>
-        </div>
-        <div className="row mt-2">
-          <div className="col-md-6">
-            {" "}
-            <img
-              src={MahindraSolar}
-              className="imng-fluid mb-2"
-            />{" "}
-          </div>
-          <div className="col-md-6">
-            {" "}
-            <p> 81,130/-</p>{" "}
-          </div>
-        </div>
-        <div className="row mt-2">
-          <div className="col-md-6">
-            {" "}
-            <img src={VikramSolar} className="imng-fluid mb-2" />{" "}
-          </div>
-          <div className="col-md-6">
-            {" "}
-            <p> 84,095/-</p>{" "}
-          </div>
-        </div>
-        <div className="row mt-2">
-          <div className="col-md-6">
-            {" "}
-            <img
-              src={TataPowerSolor}
-              className="imng-fluid mb-2"
-            />{" "}
-          </div>
-          <div className="col-md-6">
-            {" "}
-            <p> 89,020/-</p>{" "}
-          </div>
-        </div>
-        <div className="row mt-2">
-          <div className="col-md-6">
-            {" "}
-            <img
-              src={AdaniSolar}
-              className="imng-fluid mb-2"
-            />{" "}
-          </div>
-          <div className="col-md-6">
-            {" "}
-            <p>92,110/-</p>{" "}
-          </div>
-        </div>
-
-        <button
-          className=" btn btn-primary mt-4"
-          type="button"
-          onClick={handleConfirm}
-        >
-          Confirm
-        </button>
-      </div>
+         </div>
+ 
+         <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+           <div className="col">
+             <img
+               src={TataPowerSolor}
+               className="imng-fluid mb-2"
+             />
+           </div>
+           <div className="col">
+             <p> 81,130/-</p>
+           </div>
+ 
+         <div className='col'>
+         <button
+           className=" btn btn-primary "
+           type="button"
+           onClick={handleConfirm}
+         >
+           Submit
+         </button>
+         </div>
+         </div>
+ 
+         <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+           <div className="col">
+             <img src={AdaniSolar} className="imng-fluid mb-2" />
+           </div>
+           <div className="col">
+             <p> 84,095/-</p>
+           </div>
+           <div className='col'>
+         <button
+           className=" btn btn-primary "
+           type="button"
+           onClick={handleConfirm}
+         >
+           Submit
+         </button>
+         </div>
+         </div>
+ 
+         <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+           <div className="col">
+             <img
+               src={MahindraSolar}
+               className="imng-fluid mb-2"
+             />
+           </div>
+           <div className="col">
+             <p> 89,020/-</p>
+           </div>
+ 
+           <div className='col'>
+         <button
+           className=" btn btn-primary "
+           type="button"
+           onClick={handleConfirm}
+         >
+           Submit
+         </button>
+         </div>
+         </div>
+ 
+         <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
+           <div className="col">
+             <img
+               src={VikramSolar}
+               className="imng-fluid mb-2"
+             />
+           </div>
+           <div className="col">
+             <p>92,110/-</p>
+           </div>
+           <div className='col'>
+         <button
+           className=" btn btn-primary "
+           type="button"
+           onClick={handleConfirm}
+         >
+           Submit
+         </button>
+         </div>
+         </div>
+ 
+       
+       </div>
       )}
 
       {currentStep === 2 && (
@@ -588,7 +623,7 @@ export default function Polycrystalline() {
 
           <label>
           Terrace Area : sq.ft </label><br />
-            <input type="text"class="form-control" onChange={(event) => setUserData({ ...userData, terraceArea: event.target.value })} required />
+            <input type="text"class="form-control" onChange={(event) => setUserData({ ...userData, terraceArea: event.target.value })}  />
          
           </div>
           <div class="mb-3">

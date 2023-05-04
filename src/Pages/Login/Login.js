@@ -1,20 +1,33 @@
 import React,{useState} from 'react'
-import './Login.css'
-import { useNavigate } from 'react-router-dom'
+import './Login.css';
+// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 export default function Login() {
     let navigate=useNavigate();
 
     const [username,setUserName]=useState("")
     const [password,setPassword]=useState("")
+
+
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+
+    const setusername = localStorage.getItem('username');
+
+    const setpassword = localStorage.getItem('password');
+
     const handleSubmit=(e)=>{
         e.preventDefault();
-        if(e.target.username.value==="Admin" && e.target.password.value==="Admin@123"){
-            return navigate("/home")
+        if(e.target.username.value== setusername && e.target.password.value==setpassword){
+          // navigate("/");
+        window.location.reload();
+
+          localStorage.setItem("isLoggedIn", true);
         }
     }
   return (
     <div class="container-fluid">
-    <form class="mx-auto" onSubmit={handleSubmit}>
+    <form class="mx-auto p-3" onSubmit={handleSubmit} >
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">User Name</label>
           <input type="text" 
@@ -31,11 +44,12 @@ export default function Login() {
           class="form-control" 
           id="exampleInputPassword1"
           />
-          <div id="emailHelp" class="form-text mt-3">Username: - Admin</div>
-          <div id="emailHelp" class="form-text mt-3">Password: - Admin@123</div>
-        </div>
       
-        <button type="submit" class="btn btn-login ">Login</button>
+        </div>
+        <button type="submit" class="btn btn-login mt-3">
+      Login
+      
+        </button>
       </form>
 </div>
 
