@@ -6,3 +6,21 @@
 .about-img{
   height: 60vh !important;
 }  
+
+
+.list-group-item+.list-group-item {
+  border-top-width: 0;
+  height: 169px;
+}
+.active-fai{
+  background-color: teal;
+  color: white;
+}
+.active-int{
+  background-color: yellowgreen;
+  color: white;
+}
+.active-acc{
+  background-color: chocolate !important;
+  color: white !important;
+}
